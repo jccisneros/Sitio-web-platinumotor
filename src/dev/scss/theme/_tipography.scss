@@ -1,0 +1,36 @@
+/* ******* Tipografia ******* */
+
+body{
+  font-family: var(--main-font), var(--alternate-font);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);  
+  font-display: fallback;
+}
+
+
+.title{  
+  font-family: var(--secondary-font) !important;
+  font-weight: bold !important;   
+  line-height: normal;     
+}
+
+h1, h2{
+  font-family: var(--secondary-font) !important;
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h5{
+  font-size: 1.25rem;
+}
+
+@media (max-width: 575px) {
+  h2{  
+    font-size: 2.4em;            
+  }  
+}

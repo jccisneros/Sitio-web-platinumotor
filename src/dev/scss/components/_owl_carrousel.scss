@@ -1,0 +1,17 @@
+/* ******* Owl Carrousel ******* */
+
+.owl-prev, .owl-next{    
+  font-size: 60px !important;    
+  margin-top: -21% !important;  
+  position: absolute !important;
+  color: var(--alternate-color) !important;
+}
+
+.owl-prev{  
+  margin-left: -3% !important;  
+}
+
+.owl-next{  
+  right: 0 !important;
+  margin-right: -3% !important;
+}

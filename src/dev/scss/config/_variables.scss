@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Roboto:300,400,500');
+
+/* ******* Variables ******* */
+
+:root{
+  --main-font: 'Roboto';
+  --alternate-font: 'Sans-serif';
+  --secondary-font: 'Open sans';
+  --font-size: 14px;
+  --font-weight: 500;
+  --line-height: 2;
+  --letter-spacing: 2.5px;
+ 
+  --main-color: #fff;
+  --main-modal-color: #000;
+  
+  --second-color: #FFD900;
+  --second-color-gradient: -webkit-linear-gradient(to right,  #fae781, #b58f1c, #edd78b, #dad08b); 
+  --second-color-gradient-old: linear-gradient(to right,  #fae781, #b58f1c, #edd78b, #dad08b);  
+}

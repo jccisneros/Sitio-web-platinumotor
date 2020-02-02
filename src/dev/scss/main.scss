@@ -1,0 +1,41 @@
+/* ******* Config ******* */
+@import './config/variables';
+@import './config/mixins';
+
+/* ******* Reset ******* */
+@import './base/reset';
+
+/* ******* Theme ******* */
+@import './theme/color';
+@import './theme/tipography';
+
+/* ******* Layout ******* */
+@import './layout/layout';
+@import './layout/querys';
+
+/* ******* Components ******* */
+@import './components/boton';
+@import './components/hover';
+@import './components/img';
+@import './components/link';
+@import './components/logo';
+@import './components/menu';
+@import './components/owl_carrousel';
+@import './components/social_media';
+@import './components/texto';
+@import './components/modal';
+
+/* ******* Sections ******* */
+@import './sections/header';
+@import './sections/somos';
+@import './sections/servicios';
+@import './sections/video';
+@import './sections/workflow';
+@import './sections/seguros';
+@import './sections/testimonio';
+@import './sections/contacto';
+@import './sections/map';
+@import './sections/footer';
+
+/* ******* Hacks ******* */
+@import './hacks/hacks';

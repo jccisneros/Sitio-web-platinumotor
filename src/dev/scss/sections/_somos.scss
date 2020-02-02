@@ -1,0 +1,92 @@
+/* ******* Somos ******* */
+
+/*
+
+.somos-img-mobile{
+  display: none;  
+}
+
+@media only screen and (max-width: 1200px) {
+  .somos{
+    grid-template-columns: 32% 8% 1fr 8%;  
+    padding-bottom: 20px;
+  }
+  .somos-first-title{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3%;
+  }
+  .somos-title{
+    display: none;
+  }
+  .somos-text{
+    grid-gap: 2%;
+  }
+}
+
+*/
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+/*
+@media only screen and (max-width: 992px) {
+  .somos{
+    grid-template-columns: 40% 5% 1fr 5%;  
+  }
+
+}
+
+*/
+
+ /* Medium devices (landscape tablets, 768px and up) */
+
+ /*
+@media only screen and (max-width: 768px) {
+  .somos{
+    grid-template-columns: 5% 1fr 5% 40% 5%;  
+  }  
+  .somos-copy{
+    grid-column: 2;
+  }
+  .somos-text{
+    grid-gap: 4%;    
+  }
+  .somos-img{
+    display: none;
+  }
+  .somos-img-mobile{
+    display: flex;
+    align-items: center;
+    grid-column: 4;
+  }
+
+}
+
+*/
+
+/* Extra small devices (phones, 600px and down) */
+/*
+@media only screen and (max-width: 600px) {
+  .somos{
+    grid-template-columns: 1fr 90% 1fr;
+  }  
+  .somos-first-title{
+    grid-column: 2;
+  }
+  .somos-first-title .title{
+    font-size: 1.8em !important;
+    text-align: center;
+  }
+  .somos-copy{
+    grid-row: 3;
+  }
+  .somos-img-mobile {    
+    grid-column: 2;
+    width: 80%;    
+    margin: 5% auto;
+    display: flex;
+    align-items: center;    
+  }
+}
+
+*/

@@ -1,0 +1,80 @@
+/* ******* Servicios ******* */
+
+/*
+
+.servicios-content-text, .servicios-content-img{
+  margin-top: 10%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .social-media, .diseno-web, .diseno-grafico {
+    grid-gap: 10%;
+  }
+}
+
+*/
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+/*
+@media only screen and (max-width: 992px) {
+  .servicios{
+    grid-template-rows: 8% 1fr;
+    margin-bottom: 15%;
+  }
+  .servicios-title-web{
+    grid-row: 1;
+  }
+  .servicios-img-web, .servicios-img-social-media, .servicios-img-grafico{
+    grid-column-start: 2;
+    grid-column-end: 4;    
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .servicios-text-web, .servicios-text-social-media, .servicios-text-grafico{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin-bottom: 10%;    
+  }
+  .servicios-img-web{
+    grid-row: 2;    
+  }
+  .servicios-text-web{
+    grid-row: 3;    
+  }
+  .servicios-img-social-media{
+    grid-row: 4;    
+  }
+  .servicios-text-social-media{
+    grid-row: 5;    
+  }  
+  .servicios-img-grafico{
+    grid-row: 6;
+  }
+  .servicios-text-grafico{
+    grid-row: 7;
+  }
+  .servicios-content-text, .servicios-content-img {
+    margin-top: 2%;
+  }
+}
+
+*/
+
+/* Extra small devices (phones, 600px and down) */
+
+/*
+@media only screen and (max-width: 600px) {
+  .servicios{
+    margin-bottom: 20%;
+  }
+  .servicios-content{
+    grid-template-columns: 5% 1fr 1fr 5%;
+  }
+  .servicios-img-web, .servicios-img-social-media, .servicios-img-grafico{
+    width: 80%;
+  }
+}
+
+*/

@@ -1,0 +1,13 @@
+/* ******* Mixins ******* */
+
+@mixin main-gradient {
+  background: var(--second-color);
+  background: var(--second-color-gradient);
+  background: var(--second-color-gradient-old);
+}
+
+@mixin second-gradient {
+  background: var(--alternate-color);
+  background: var(--alternate-color-gradient);
+  background: var(--alternate-color-gradient-old);
+}
