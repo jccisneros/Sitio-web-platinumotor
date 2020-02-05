@@ -22,8 +22,9 @@ gulp.task('sass', () => {
         'src/dev/scss/hacks/*.scss',
         'src/dev/scss/layout/*.scss',
         'src/dev/scss/sections/*.scss',
-        'src/dev/scss/theme/*.scss',
-        'node_modules/izimodal/css/iziModal.min.css'
+        'src/dev/scss/theme/*.scss',        
+        'node_modules/bootstrap/dist/css/bootstrap.min.css',
+        'node_modules/animate.css/animate.min.css'
     ])
     .pipe(sass({outputStyle: 'nested'})) //nested para sacar sin compresion
     .pipe(gulp.dest('src/dist/css'))
@@ -34,37 +35,20 @@ gulp.task('js', () => {
     return gulp.src([        
         'node_modules/jquery/dist/jquery.min.js',
         'node_modules/popper.js/dist/umd/popper.min.js',
-        'node_modules/izimodal/js/iziModal.min.js'
+        'node_modules/bootstrap/dist/js/bootstrap.min.js'
     ])
     .pipe(gulp.dest('src/dist/js'))
     .pipe(browserSync.stream());
 });
 
-gulp.task('img', () =>
-    gulp.src('src/dev/img/*')
-        .pipe(imagemin([
-            imagemin.gifsicle({interlaced: true}),
-            imagemin.jpegtran({progressive: true}),  
-            imagemin.optipng({optimizationLevel: 5}),          
-            imagemin.svgo({
-                plugins: [
-                    {removeViewBox: true},
-                    {cleanupIDs: false}
-                ]
-            })
-        ]))
-        .pipe(gulp.dest('src/dist/img'))
-);
-
-gulp.task('serve', ['sass', 'pug', 'img'], () => {
+gulp.task('serve', ['sass', 'pug'], () => {
     browserSync.init({
         server: './src/dist'
     });
     gulp.watch([        
         'src/dev/scss/**/*.scss',
         'src/dev/views/**/*.pug',
-        'src/dev/img/*'        
-    ], ['img', 'sass',  'pug']);
+    ], ['sass',  'pug']);
     gulp.watch('src/dist/*.html').on('change', browserSync.reload);
 });
 

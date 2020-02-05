@@ -1,10 +1,10 @@
 /* ******* Layout ******* */
 
 .grid{
-  display: grid;
-  grid-gap: 5%;
-  grid-template-areas: "head"
-                       "somos"                       
+  display: grid;  
+  grid-template-areas: "men"
+                       "head"
+                       "somos"
                        "servicios"
                        "video"                       
                        "workflow"
@@ -13,6 +13,11 @@
                        "contacto"
                        "map"
                        "foot";  
+}
+
+.menu{
+  grid-area: men;   
+  display: grid;    
 }
 
 .head{
@@ -58,9 +63,7 @@
 
 .contacto{
   grid-area: contacto; 
-  display: grid;  
-  background-color: gray;
-  color:#fff;
+  display: grid;    
 }
 
 .map{
@@ -74,6 +77,9 @@
   background-color: gray;
   color:#fff;
 }
+
+@import './layout/parts/social-bar.scss';
+
 
 /*
 

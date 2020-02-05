@@ -1,1 +1,13 @@
 /* ******* Hacks ******* */
+.slider{
+  position: absolute!important;
+  z-index: 1;
+}
+
+.navbar{ 
+  z-index: 2;
+}
+
+.text-horario{
+  z-index: 2;
+}

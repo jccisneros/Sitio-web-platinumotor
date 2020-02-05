@@ -1,0 +1,39 @@
+<div class="container-fluid mt-5">
+  <div class="row">
+    <!-- Section Titile -->
+    <div class="col-md-6 mt-3 contenedor-img">
+      img(src="./img/bg1.png", alt="").contacto-img
+    </div>
+    <!-- contact form -->
+    <div class="col-md-6 bg-dar text-white">
+      .container
+        h1.mt-5.mb-5.text-secondary.font-weight-bold Escríbenos
+        <form class="shake mt-5 mb-5" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+          <!-- Asunto -->
+          <div class="form-group label-floating">
+            <label class="control-label" for="asunto">Asunto</label>
+            <input class="form-control" id="asunto" type="text" name="asunto" required data-error="Por favor, ingrese el asunto">
+            <div class="help-block with-errors"></div>
+          </div>
+          <!-- Email -->
+          <div class="form-group label-floating">
+            <label class="control-label" for="email">Email</label>
+            <input class="form-control" id="email" type="email" name="email" required data-error="Por favor, ingrese el correo">
+            <div class="help-block with-errors"></div>
+          </div>
+          <!-- Mensaje -->
+          <div class="form-group label-floating">
+            <label for="mensaje" class="control-label">Mensaje</label>
+            <textarea class="form-control" rows="3" id="mensaje" name="mensaje" required data-error="Por favor, rellena el campo para el mensaje"></textarea>
+            <div class="help-block with-errors"></div>
+          </div>
+          <!-- Enviar -->
+          <div class="form-submit mt-5">
+            <button class="btn btn-slider-2" type="submit" id="enviar"><i class="material-icons mdi mdi-message-outline"></i>Enviar</button>
+            <div id="msgSubmit" class="h3 text-center hidden"></div>
+            <div class="clearfix"></div>
+          </div>
+        </form>
+    </div>
+  </div>
+</div>

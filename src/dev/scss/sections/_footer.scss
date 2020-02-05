@@ -1,5 +1,23 @@
 /* ******* Footer ******* */
 
+.menu-footer-link{
+  color: var(--second-color);  
+  font-weight: bolder;
+  &:hover{
+    color: var(--main-color);    
+  }
+}
+
+.footer-text{
+  font-size: .6em;
+}
+
+.footer-hr{
+  width: 100%;  
+  background-color: var(--second-color);
+}
+
+
 /*
 
 .footer{  

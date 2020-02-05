@@ -8,3 +8,27 @@ body{
 .bg-gradient{
   @include second-gradient;  
 }
+  
+.bg-dar{
+  background-color: var(--main-modal-color)!important;
+}
+
+.bg-secondary{
+  background-color: var(--second-color)!important;
+}
+
+.text-horario{
+  color: #909090;
+}
+
+.social-item{
+  color: var(--second-color);
+}
+
+.social-item:hover{
+  color: var(--main-color);
+}
+
+.text-secondary{
+  color: var(--second-color) !important;
+}
