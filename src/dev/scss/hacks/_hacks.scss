@@ -1,13 +1,27 @@
 /* ******* Hacks ******* */
-.slider{
-  position: absolute!important;
+.slider{  
   z-index: 1;
+  top: -17%;
+  margin-bottom: -5%;
 }
 
-.navbar{ 
+.menu{ 
   z-index: 2;
 }
 
-.text-horario{
-  z-index: 2;
+.btn{
+  z-index: 6 !important;
+}
+
+.title-to-text{
+  font-size: 1em;
+  display: inline;  
+}
+
+@media only screen and (max-width: 768px) {
+
+  .slider{
+    top: 0;
+  }
+
 }

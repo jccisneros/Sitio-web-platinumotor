@@ -1,32 +1,34 @@
 /* ******* Social Media ******* */
 
-/*
-
 .social-sharing {
 	display: block;
 	position: fixed;	
 	left: 2%;
   bottom: 8%;  
-  z-index: 999999999999999;  
+  z-index: 4; 
+  width: 5%;
 }
 
 .menu-social{
   list-style:none;
 }
 
-.social-item{
-  width: 40%;
+.social-item{  
   text-decoration: none;
 }
 
 .logo-w{
-  width: 13%;
+  width: 90%;  
 }
 
-@media (max-width: 575px) {
-  .logo-w{
-    width: 40%;
+@media (max-width: 768px) {
+  .social-sharing {
+    width: 8%;
   }
 }
 
-*/
+@media only screen and (max-width: 600px) {
+  .social-sharing {
+    width: 15%;
+  }
+}

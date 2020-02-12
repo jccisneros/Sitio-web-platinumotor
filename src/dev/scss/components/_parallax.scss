@@ -1,0 +1,70 @@
+/* ******* Parallax ******* */
+
+.header-parallax {
+  /* The image used */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../img/parallax-mobil.webp");
+
+  /* Full height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: grayscale(0.5) opacity(0.8)
+}
+
+.parallax {  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../img/parallax.webp");
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+
+.parallax-second {  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("../img/parallax-second.webp");
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+
+.parallax-text{
+  padding-left: 5%;
+  padding-right: 5%;
+  h2{
+    font-size: 2.5em;
+  }  
+}
+
+@media only screen and (max-width: 768px) {
+  .parallax, .parallax-second{
+    height: 300px;    
+  }
+
+  .parallax-text h2{
+    font-size: 1.1em;
+  }
+
+  .parallax-text h4{
+    font-size: .9em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .parallax-text {
+    padding-left: 5%;
+    padding-right: 5%;   
+    h2{
+      font-size: 1em;
+    }
+  }
+
+  .parallax-text h4{
+    font-size: .8em;
+  }
+}

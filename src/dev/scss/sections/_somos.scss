@@ -1,5 +1,17 @@
 /* ******* Somos ******* */
 
+@media only screen and (max-width: 768px) {
+  .somos-img{
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .somos-img{
+    width: 80%;
+  }
+}
+
 /*
 
 .somos-img-mobile{

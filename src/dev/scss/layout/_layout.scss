@@ -5,12 +5,15 @@
   grid-template-areas: "men"
                        "head"
                        "somos"
+                       "parallax"
                        "servicios"
                        "video"                       
                        "workflow"
                        "seguros"
                        "testimonio"
-                       "contacto"
+                       "parallax-second"
+                       "datos-contacto"
+                       "form-contacto"
                        "map"
                        "foot";  
 }
@@ -20,21 +23,24 @@
   display: grid;    
 }
 
-.head{
+.header{
   grid-area: head;   
   display: grid;    
 }
 
 .somos{
   grid-area: somos;   
-  display: grid;  
-  background-color: gray;
-  color:#fff;
+  display: grid;    
+}
+
+.parallax{
+  grid-area: parallax;   
+  display: grid; 
 }
 
 .servicios{
-  grid-area: servicios;   
-  display: grid;  
+  grid-area: servicios;
+  display: grid;
 }
 
 .video{
@@ -52,8 +58,6 @@
 .seguros{
   grid-area: seguros;  
   display: grid;  
-  background-color: gray;
-  color:#fff;
 }
 
 .testimonio{
@@ -61,8 +65,18 @@
   display: grid;  
 }
 
-.contacto{
-  grid-area: contacto; 
+.parallax-second{
+  grid-area: parallax-second;   
+  display: grid; 
+}
+
+.datos-contacto{
+  grid-area: datos-contacto; 
+  display: grid;    
+}
+
+.formulario-contacto{
+  grid-area: formulario-contacto; 
   display: grid;    
 }
 
@@ -79,133 +93,3 @@
 }
 
 @import './layout/parts/social-bar.scss';
-
-
-/*
-
-.header{
-  display: grid;
-  grid-template-rows: repeat(4, 1fr) ;
-  grid-column: 2; 
-  grid-gap: 8%;
-}
-
-.header-title{
-  grid-row: 2;
-  margin-top: 5%;
-}
-
-.header-text{
-  grid-row: 3;
-}
-
-.header-button{
-  grid-row: 4;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 7%;
-}
-*/
-
-
-/*
-.somos-img{
-  display: flex;
-  align-items: center;
-}
-
-.somos-first-title{
-  grid-column: span 4;
-  padding-bottom: 5%;  
-  display: none;
-}
-
-.somos-copy{
-  grid-column: 3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  grid-gap: 6%;
-}
-.somos-text{
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-gap: 8%;
-}
-*/
-
-
-/*
-
-.card-1{
-  grid-column: 2;
-}
-
-.card-2{
-  grid-column: 3;
-}
-
-.card-3{
-  grid-column: 4;
-}
-*/
-
-
-
-/*
-
-.servicios-content{
-  display: grid;
-  grid-template-columns: 10% 1fr 1fr 10%;
-  grid-gap: 2%;
-}
-
-.servicios-content-text{
-  grid-column: 2;
-}
-
-.servicios-content-text, .servicios-content-img{  
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.servicios-content-img{
-  grid-column: 3;
-}
-
-.social-media, .diseno-web, .diseno-grafico{
-  display: grid;
-  grid-gap: 30%;
-}
-
-
-
-
-.workflow-icon{
-  display: grid;
-  grid-template-columns: 10% 1fr 1fr 1fr 1fr 10%;
-  margin-top: 8%;  
-}
-
-.worflow-investigacion{
-  grid-column: 2;
-}
-
-.worflow-planificacion{
-  grid-column: 3;
-}
-
-.portafolio{
-  grid-area: portafolio;   
-}
-
-
-.instagram{
-  grid-area: instagram; 
-  background: #bbb; 
-}
-
-
-*/

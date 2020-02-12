@@ -1,4 +1,96 @@
-#contacto
-  .contacto
-    include ../components/datos_contacto.pug
-    include ../components/formulario.pug   
+#datos-contacto
+  .datos-contacto.mt-5    
+    .container.my-5
+      .row.justify-content-center
+        h2.font-weight-bold.text-center Contáctanos
+        h5.text-center.my-3.mb-5.pb-5.d-none.d-md-block Te invitamos a contactarnos, a través, de nuestros canales de servicio al cliente.      
+        p.text-center.my-3.mb-5.pb-5.pr-2.pl-2.d-block.d-md-none Te invitamos a contactarnos, a través, de nuestros canales de servicio al cliente.      
+        .col-md-7.my-3
+          .d-flex.flex-column.align-items-center.flex-md-row
+            .circulo 
+              <i class="fa fa-home" aria-hidden="true"></i>          
+            .datos-contacto-texto.my-4.ml-md-4.text-center.text-md-left
+              h3 Dirección
+              p.contacto-info Cdla. Comegua Mz. M Sl. 21. Guayaquil-Ecuador
+        .col-md-5.my-4.d-none.d-md-block
+          h3 
+            span.font-weight-bold Llámanos: 
+          h3
+            span.contacto-numero (04) 6039047 - 0992086188 
+        .col-md-7.my-3
+          .d-flex.flex-column.align-items-center.flex-md-row
+            .circulo 
+              <i class="fa fa-envelope" aria-hidden="true"></i>          
+            .datos-contacto-texto.my-4.ml-md-4.text-center.text-md-left
+              h3 Email
+              p.contacto-info.d-none.d-md-block direccióncomercial@talleresplatinumotor.com
+              p.contacto-info.d-block.d-none
+                a(href="mailto:direccióncomercial@talleresplatinumotor.com") direccióncomercial@talleresplatinumotor.com
+        .col-md-5.my-4.d-none.d-md-block       
+          h3
+            span.font-weight-bold Redes sociales
+          h4.mt-3
+            span            
+              <a class="social-item-contacto mr-4" href="https://www.facebook.com/Talleres-PlatinuMotor-101635308073639/?__tn__=%2Cd%2CP-R&eid=ARAVIrEe51KOv0VWiZ3ahGZY2Wynpm5juIDzhXi_xxm97pJ7Aw90zSDAKMa3f3osg-sbB5xoWWM2fuAz" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            span            
+              <a class="social-item-contacto" href="https://www.instagram.com/talleresplatinumotorec" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        .d-block.d-md-none.my-4
+          .d-flex.flex-column.align-items-center
+            h3 
+              span.font-weight-bold Llámanos: 
+            h4
+              a(href="tel:+593992086188")
+                span.contacto-numero (04) 6039047 - 0992086188 
+        .d-block.d-md-none.my-4
+          .d-flex.flex-column.align-items-center
+            h3
+              span.font-weight-bold Redes sociales
+            h4.mt-3
+              span            
+                <a class="social-item-contacto mr-4" href="https://www.facebook.com/Talleres-PlatinuMotor-101635308073639/?__tn__=%2Cd%2CP-R&eid=ARAVIrEe51KOv0VWiZ3ahGZY2Wynpm5juIDzhXi_xxm97pJ7Aw90zSDAKMa3f3osg-sbB5xoWWM2fuAz" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              span            
+                <a class="social-item-contacto" href="https://www.instagram.com/talleresplatinumotorec" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+
+#formulario-contacto
+  .formulario-contacto  
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <!-- Section Titile -->
+        <div class="col-md-6 mt-3 contenedor-img">
+          img(src="./img/atencion-personalizada-taller-mecanico-automotriz-guayaquil-platinumotor.webp", alt="Atencion personalizada. Taller mecánico automotriz. Guayaquil - Ecuador. Platinumotor").contacto-img.d-none.d-md-block
+        </div>
+          img(src="./img/atencion-personalizada-taller-mecanico-automotriz-guayaquil-platinumotor-mobil.webp", alt="Atencion personalizada. Taller mecánico automotriz. Guayaquil - Ecuador. Platinumotor").contacto-img.d-block.d-md-none
+          h2.text-secondary.font-weight-bold.mr-auto.ml-auto.workflow-text-mobile.d-block.d-md-none Escríbenos
+        <!-- contact form -->
+        <div class="col-md-6 bg-dar text-white">
+          .container
+            h1.mt-5.mb-5.text-secondary.font-weight-bold.d-none.d-md-block Escríbenos
+            <form class="shake mt-5 mb-5" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator" action="contact.php">
+              <!-- Asunto -->
+              <div class="form-group label-floating">
+                <label class="control-label" for="asunto">Asunto</label>
+                <input class="form-control" id="asunto" type="text" name="asunto" required data-error="Por favor, ingrese el asunto">
+                <div class="help-block with-errors"></div>
+              </div>
+              <!-- Email -->
+              <div class="form-group label-floating">
+                <label class="control-label" for="email">Email</label>
+                <input class="form-control" id="email" type="email" name="email" required data-error="Por favor, ingrese el correo">
+                <div class="help-block with-errors"></div>
+              </div>
+              <!-- Mensaje -->
+              <div class="form-group label-floating">
+                <label for="mensaje" class="control-label">Mensaje</label>
+                <textarea class="form-control" rows="3" id="mensaje" name="mensaje" required data-error="Por favor, rellena el campo para el mensaje"></textarea>
+                <div class="help-block with-errors"></div>
+              </div>
+              <!-- Enviar -->
+              <div class="form-submit mt-5 text-center text-md-left">
+                <button class="btn btn-slider-2" type="submit" id="enviar"><i class="material-icons mdi mdi-message-outline"></i>Enviar</button>
+                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                <div class="clearfix"></div>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>  

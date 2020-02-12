@@ -1,13 +1,22 @@
 /* ******* Horario ******* */
 
-.horario{
-  margin-left: 9%;
+.bar-info{
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-top: -10%;
+  z-index: 6;
 }
 
-.social-items{
-  display: flex;
-  vertical-align: center;
-  margin-right: 3%;
+.info-space{
+  padding: 2% ;  
+  width: 70%;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.4), 0 6px 4px -5px rgba(0,0,0,0.2),0 4px 5px 0 rgba(0,0,0,0.2);  
+}
+
+.text-info{  
+  color: var(--second-color)!important;
+  font-size: 1.5em;
+  font-weight: bold;
 }

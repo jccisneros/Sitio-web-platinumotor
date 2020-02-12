@@ -51,7 +51,7 @@
   font-size: 3.2em;
   color: var(--main-color);
   font-weight: bold;  
-  left: 0!important;
+  margin-left: 0!important;
 }
 
 .subtitulo-slider{  
@@ -96,6 +96,29 @@
 .img-slider{
   width: 70%;
   height: auto;
+}
+
+.header-hr{
+  width: 60%;  
+  background-color: var(--main-color);
+  height: 3px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .titulo-slider, .titulo-slider-2{ 
+    font-size: 2.8em;        
+    text-align: center !important;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  
+  .slider-title, .slider-title-2{
+    margin-left: 0;    
+    align-items: center;
+  }
+
 }
 
 

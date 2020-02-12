@@ -9,13 +9,30 @@
 }
 
 .footer-text{
-  font-size: .6em;
+  font-size: .7em;
 }
 
 .footer-hr{
   width: 100%;  
   background-color: var(--second-color);
 }
+
+@media only screen and (max-width: 768px) {
+  .logo-menu-footer{
+    width: 60%;  
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logo-menu-footer{
+    width: 70%;  
+  }
+
+  .footer-text{
+    font-size: .5em;
+  }
+}
+
 
 
 /*

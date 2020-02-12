@@ -1,26 +1,11 @@
 /* ******* Menu ******* */
 @import './components/parts/nav-link.scss';
 
-/*
-.navbar{  
-  z-index: 99 !important;
-}
-
-.nav-link{
-  text-transform: none !important;  
-  font-weight: 550 !important;
+.nav-link{    
   font-size: 1em !important;
-  margin-left: 15px;
+  margin-left: 12px;
   letter-spacing: 4px !important;
   transition: all .2s ease-out; 
-}
-
-.color-nav-link2{
-  color: var(--text-color) !important;
-
-  &:hover{
-    color: var(--second-color) !important;    
-  }
 }
 
 .color-nav-link{
@@ -31,6 +16,26 @@
   }
 }
 
+.bg-transparency{
+  transition: all .5s ease;
+}
+
+.menu-shadow{
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.4), 0 6px 4px -5px rgba(0,0,0,0.2),0 4px 5px 0 rgba(0,0,0,0.2);  
+}
+
+
+/*
+.navbar{  
+  z-index: 99 !important;
+}
+
+
+
+
+
+
+
 
 @media (max-width: 575.98px) {
   .navbar-brand{
@@ -38,9 +43,6 @@
   }  
 }
 
-.bg-transparency{
-  transition: all .5s ease;
-}
 
 .color-nav-link{
   transition: all .5s ease;
@@ -50,9 +52,7 @@
   box-shadow: -2px -2px !important;  
 }
 
-.menu-shadow2{
-  box-shadow: 10px 5px 5px black;  
-}
+
 
 #menu2{
   z-index: 99999999999999999999999999 !important;

@@ -6,9 +6,7 @@ const browserSync = require('browser-sync');
 
 gulp.task('pug', () => {
     return gulp.src('src/dev/views/pages/*.pug')
-    .pipe(pug({
-      pretty: true
-    }))
+    .pipe(pug({}))
     .pipe(gulp.dest('src/dist/'))
     .pipe(browserSync.stream());
 });
@@ -26,7 +24,7 @@ gulp.task('sass', () => {
         'node_modules/bootstrap/dist/css/bootstrap.min.css',
         'node_modules/animate.css/animate.min.css'
     ])
-    .pipe(sass({outputStyle: 'nested'})) //nested para sacar sin compresion
+    .pipe(sass({outputStyle: 'compressed'})) 
     .pipe(gulp.dest('src/dist/css'))
     .pipe(browserSync.stream());
 });

@@ -1,0 +1,23 @@
+.ir-arriba{  
+  display: block;	
+  border-radius: 50%;
+  font-size:25px;
+  background-color: #000;
+  color:var(--second-color);
+  cursor:pointer;
+  position:fixed;
+  bottom: 10%;  
+  right:2%;
+  z-index:4;
+}
+
+.arriba-none{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .ir-arriba{ 
+    font-size: 20px;
+  }
+
+}

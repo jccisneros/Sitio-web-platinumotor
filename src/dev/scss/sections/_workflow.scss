@@ -1,5 +1,23 @@
 /* ******* Workflow ******* */
 
+.flujo-trabajo{
+  margin-left: 40%;
+}
+
+.workflow-text-mobile{
+  margin-top: -40%;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .flujo-trabajo{
+    margin-left: 0;
+    text-align: center;
+  }  
+
+}
+
+
 /*
 
 .workflow-space{
